@@ -6,7 +6,9 @@ import dts from 'vite-plugin-dts'
 export default defineConfig({
   plugins: [
     react(),
-    dts({ include: ['lib'] })
+    dts({
+      tsconfigPath: resolve(__dirname, "tsconfig.lib.json"),
+     }),
   ],
   build: {
     copyPublicDir: false,
