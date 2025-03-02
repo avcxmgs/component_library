@@ -1,3 +1,1 @@
-export function hello(thing: string): string {
-    return `Hello ${thing}!`
-}
+export { default as Button } from './components/Button'
