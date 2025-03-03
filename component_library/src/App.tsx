@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Button>Button!</Button>
+      <Button disabled={true}>Button!</Button>
       <Label htmlFor="text">Text here</Label>
     </>
   )
