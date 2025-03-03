@@ -8,7 +8,7 @@ function App() {
 
   return (
     <>
-      <Button label="button"/>
+      <Button>Button!</Button>
       <Label htmlFor="text">Text here</Label>
     </>
   )
