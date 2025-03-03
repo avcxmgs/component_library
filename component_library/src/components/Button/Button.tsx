@@ -1,9 +1,9 @@
-import React from 'react';
+// import React from 'react';
 import styled from 'styled-components';
 import { ButtonProps } from './Button.types';
 
 const StyledButton = styled.button<{}>`
-  background-color: blue;
+  background-color: pink;
   color: white;
   font-size: 16px;
   padding: 8px 16px;
