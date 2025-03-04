@@ -2,15 +2,14 @@ import React from 'react';
 import styled from 'styled-components';
 import { LabelProps } from './Label.types';
 
-const StyledLabel = styled.label<{}>`
-  background-color: pink;
-  color: white;
+const StyledLabel = styled.label<LabelProps>`
+  color: ${({ disabled }) => (disabled ? 'gray' : 'black')};
   font-size: 16px;
-  padding: 8px 16px;
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
 `;
 
-const Label = (props: LabelProps) => {
-    return <StyledLabel>{props.htmlFor}</StyledLabel>;
+const Label: React.FC<LabelProps> = ({children, htmlFor, disabled}) => {
+  return <StyledLabel htmlFor={htmlFor} disabled={disabled}>{children}</StyledLabel>;
 };
 
 export default Label;

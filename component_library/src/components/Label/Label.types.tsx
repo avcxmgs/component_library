@@ -1,3 +1,5 @@
 export interface LabelProps extends React.LabelHTMLAttributes<HTMLLabelElement> {
-    htmlFor: string;
+  children: React.ReactNode;  
+  htmlFor?: string;
+  disabled?: boolean;
   }

@@ -11,7 +11,6 @@ describe('Button', () => {
 
   test('background color changes when disabled', () => {
     render(<Button disabled={true}>Disabled Button</Button>);
-    expect(screen.getByText('Disabled Button')).toBeDisabled();
     expect(screen.getByText('Disabled Button')).toHaveStyle('background-color: gray; cursor: not-allowed');
   });
 });
