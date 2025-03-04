@@ -29,7 +29,7 @@ export const Default: Story = {
 
 export const Disabled: Story = {
     args: {
-      children: 'Label',
+      children: 'Disabled Label',
       disabled: true,
     },
   };

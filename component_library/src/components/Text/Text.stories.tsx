@@ -1,11 +1,11 @@
 import React from 'react';
 import type { Meta, StoryObj } from '@storybook/react';
 
-import Button from './Button';
+import Text from './Text';
 
 const meta = {
-  title: 'Components/Button',
-  component: Button,
+  title: 'Components/Text',
+  component: Text,
   parameters: {
     layout: 'centered',
   },
@@ -14,21 +14,21 @@ const meta = {
     disabled: { control: 'boolean' },
   },
 
-} satisfies Meta<typeof Button>;
+} satisfies Meta<typeof Text>;
 
 export default meta;
 type Story = StoryObj<typeof meta>;
 
 export const Default: Story = {
   args: {
-    children: 'Button',
+    children: 'Text Area',
     disabled: false,
   },
 };
 
 export const Disabled: Story = {
     args: {
-      children: 'Disabled Button',
+      children: 'Disabled Text Area',
       disabled: true,
     },
   };
