@@ -9,7 +9,7 @@ describe('Img', () => {
     expect(screen.getByAltText('Placeholder Image')).toBeVisible();
   });
 
-  test('opcaity changes when disabled', () => {
+  test('opacity changes when disabled', () => {
     render(<Img src="https://placehold.co/400" alt="Disabled Image" disabled={true}/>);
     expect(screen.getByAltText('Disabled Image')).toHaveStyle('opacity: 0.5');
   });

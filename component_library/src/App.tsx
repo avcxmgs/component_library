@@ -5,6 +5,7 @@ import Label from './components/Label/Label';
 import Text from './components/Text/Text';
 import Table from './components/Table/Table';
 import Img from './components/Img/Img';
+import HeroImage from './components/Hero_Image/HeroImage';
 
 
 
@@ -12,6 +13,7 @@ function App() {
 
   return (
     <>
+      <HeroImage src="https://placehold.co/1200x300" alt="placeholder image" text="HERO IMAGE" disabled={false}/>
       <Button disabled={false}>Button!</Button><br/>
       <Label disabled={false}>Text here</Label><br/>
       <Text disabled={false}>hi hello</Text><br/>
