@@ -4,6 +4,7 @@ import Button from './components/Button/Button';
 import Label from './components/Label/Label';
 import Text from './components/Text/Text';
 import Table from './components/Table/Table';
+import Img from './components/Img/Img';
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <td>TD1</td>
           <td>TD2</td>
         </tr></Table><br/>
+      <Img src="https://placehold.co/300" alt="placeholder image" disabled={false}/><br/>
     </>
   )
 }
