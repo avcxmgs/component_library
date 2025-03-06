@@ -1,3 +1,4 @@
+import React from 'react';
 import { render, screen } from "@testing-library/react";
 import Img from "./Img";
 import '@testing-library/jest-dom'
