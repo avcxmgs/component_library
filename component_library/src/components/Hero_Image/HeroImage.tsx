@@ -2,13 +2,12 @@ import React from 'react';
 import styled from 'styled-components';
 import { HeroImageProps } from './HeroImage.types';
 
-const StyledHeroImage = styled.img<{disabled?: boolean, src?: string}>`
-  height: 50%;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+const StyledContainer = styled.div<{disabled?: boolean}>`
   position: relative;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(${({ src }) => (src)});
+  cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
+`;
+
+const StyledHeroImage = styled.img<{disabled?: boolean}>`
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
 `;
@@ -18,13 +17,16 @@ const StyledHeroText = styled.div<{disabled?: boolean}>`
   position: absolute;
   top: 50%;
   left: 50%;
+  font-size: 30px;
   color: ${({ disabled }) => (disabled ? 'gray' : 'white')};
 `;
 
 const HeroImage: React.FC<HeroImageProps> = ({src, alt, text, disabled}) => {
-    return ( <StyledHeroImage src={src} alt={alt} disabled={disabled}>
-        <StyledHeroText disabled={disabled}>{text}</StyledHeroText>
-        </StyledHeroImage>
+    return (
+      <StyledContainer disabled={disabled}>
+      <StyledHeroImage src={src} alt={alt} disabled={disabled}/>
+      <StyledHeroText disabled={disabled}>{text}</StyledHeroText>
+      </StyledContainer>
     );
 };
 

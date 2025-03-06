@@ -5,7 +5,7 @@ import Label from './components/Label/Label';
 import Text from './components/Text/Text';
 import Table from './components/Table/Table';
 import Img from './components/Img/Img';
-// import HeroImage from './components/Hero_Image/HeroImage';
+import HeroImage from './components/Hero_Image/HeroImage';
 import RadioButton from './components/Radio_Button/RadioButton'
 import Dropdown from './components/Dropdown/Dropdown';
 
@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      {/* <HeroImage src="https://placehold.co/1200x300" alt="placeholder image" text="HERO IMAGE" disabled={false}/> */}
+      <HeroImage src="https://placehold.co/1200x300" alt="placeholder image" text="HERO IMAGE" disabled={true}/>
       <Button disabled={false}>Button</Button><br/>
       <Text disabled={false}>Text Area</Text><br/>
       <Label disabled={false}>Label</Label>

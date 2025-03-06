@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { ImgProps } from './Img.types';
 
 const StyledImg = styled.img<ImgProps>`
-  width: 100%;
+  width: 300px;
   height: auto;
   opacity: ${({ disabled }) => (disabled ? 0.5 : 1)};
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'pointer')};
