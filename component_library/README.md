@@ -1,4 +1,6 @@
-## Coding Assignment 11
+# Coding Assignment 12
+
+## Building Dockerfile
 
 1. Create empty folder and clone repo from GitHub using
 git@github.com:avcxmgs/component_library.git
@@ -21,3 +23,43 @@ http://localhost:8083/
 
 7. Stop the container:
 q + enter
+
+## Running Dev and Storybook
+
+1. Create empty folder and clone repo from GitHub using
+git@github.com:avcxmgs/component_library.git
+
+2. Navigate to the folder:
+cd component_library/component_library
+
+3. Install the dependencies:
+npm install
+
+4. Run dev:
+npm run dev
+
+5. It will run on:
+http://localhost:5173/
+
+6. Stop the dev server:
+ctrl + c
+
+7. Run Storybook:
+npm run storybook
+
+8. It will run on:
+http://localhost:6006/
+
+## Running Tests
+
+1. 1. Create empty folder and clone repo from GitHub using
+git@github.com:avcxmgs/component_library.git
+
+2. Navigate to the folder:
+cd component_library/component_library
+
+3. Install the dependencies:
+npm install
+
+4. Run the tests:
+npm run test
