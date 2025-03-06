@@ -1,6 +1,5 @@
 export interface RadioButtonProps{
-    label: React.ReactNode;
-    name: string;
+    label: string;
     checked?: boolean;
     disabled?: boolean;
 }

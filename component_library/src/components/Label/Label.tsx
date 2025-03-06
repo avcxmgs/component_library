@@ -3,7 +3,7 @@ import styled from 'styled-components';
 import { LabelProps } from './Label.types';
 
 const StyledLabel = styled.label<LabelProps>`
-  color: ${({ disabled }) => (disabled ? 'gray' : 'black')};
+  color: ${({ disabled }) => (disabled ? 'gray' : 'pink')};
   font-size: 16px;
   cursor: ${({ disabled }) => (disabled ? 'not-allowed' : 'default')};
 `;
