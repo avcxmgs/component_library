@@ -4,6 +4,6 @@ export interface DropdownOption{
 }
 
 export interface DropdownProps{
-    items: React.ReactNode;// DropdownOption[];
+    items: DropdownOption[];
     disabled?: boolean;
 }

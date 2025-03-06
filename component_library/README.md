@@ -6,7 +6,7 @@
 git@github.com:avcxmgs/component_library.git
 
 2. Navigate to the folder:
-cd component_library/component_library
+cd component_library
 
 3. Start Docker Desktop
 
@@ -30,7 +30,7 @@ q + enter
 git@github.com:avcxmgs/component_library.git
 
 2. Navigate to the folder:
-cd component_library/component_library
+cd component_library
 
 3. Install the dependencies:
 npm install
@@ -56,7 +56,7 @@ http://localhost:6006/
 git@github.com:avcxmgs/component_library.git
 
 2. Navigate to the folder:
-cd component_library/component_library
+cd component_library
 
 3. Install the dependencies:
 npm install

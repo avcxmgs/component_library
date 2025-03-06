@@ -7,10 +7,17 @@ import Table from './components/Table/Table';
 import Img from './components/Img/Img';
 // import HeroImage from './components/Hero_Image/HeroImage';
 import RadioButton from './components/Radio_Button/RadioButton'
+import Dropdown from './components/Dropdown/Dropdown';
 
 
 
 function App() {
+
+  const items = [
+    { value: 'd1', label: 'Dropdown 1'},
+    { value: 'd2', label: 'Dropdown 2'},
+    { value: 'd3', label: 'Dropdown 3'}
+  ];
 
   return (
     <>
@@ -29,6 +36,7 @@ function App() {
         </tr></Table><br/>
       <Img src="https://placehold.co/300" alt="placeholder image" disabled={false}/><br/>
       <RadioButton label="Radio Button" disabled={false}/><br/>
+      <Dropdown items={items} disabled={true}/><br/>
     </>
   )
 }
