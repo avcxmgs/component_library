@@ -12,7 +12,7 @@ const StyledRadioButton = styled.input<RadioButtonProps>`
 `;
 
 const RadioButton: React.FC<RadioButtonProps> = ({label, name, checked, disabled}) => {
-    return <StyledRadioButton label="" name="" checked={checked} disabled={disabled}></StyledRadioButton>;
+    return <StyledRadioButton label={label} name={name} checked={checked} disabled={disabled}></StyledRadioButton>;
 };
 
 export default RadioButton;
