@@ -21,7 +21,7 @@ function App() {
 
   return (
     <>
-      <HeroImage src="https://placehold.co/1200x300" alt="placeholder image" text="HERO IMAGE" disabled={true}/>
+      <HeroImage src="https://placehold.co/1200x300" alt="placeholder image" text="HERO IMAGE" disabled={false}/>
       <Button disabled={false}>Button</Button><br/>
       <Text disabled={false}>Text Area</Text><br/>
       <Label disabled={false}>Label</Label>
@@ -36,7 +36,7 @@ function App() {
         </tr></Table><br/>
       <Img src="https://placehold.co/300" alt="placeholder image" disabled={false}/><br/>
       <RadioButton label="Radio Button" disabled={false}/><br/>
-      <Dropdown items={items} disabled={true}/><br/>
+      <Dropdown items={items} disabled={false}/><br/>
     </>
   )
 }
