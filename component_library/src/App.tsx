@@ -36,7 +36,7 @@ function App() {
         </tr></Table><br/>
       <Img src="https://placehold.co/300" alt="placeholder image" disabled={false}/><br/>
       <RadioButton label="Radio Button" disabled={false}/><br/>
-      <Dropdown items={items} disabled={true}/><br/>
+      <Dropdown items={items} disabled={false}/><br/>
     </>
   )
 }
