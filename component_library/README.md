@@ -52,7 +52,7 @@ http://localhost:6006/
 
 ## Running Tests
 
-1. 1. Create empty folder and clone repo from GitHub using
+1. Create empty folder and clone repo from GitHub using
 git@github.com:avcxmgs/component_library.git
 
 2. Navigate to the folder:
